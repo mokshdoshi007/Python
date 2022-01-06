@@ -1,0 +1,5 @@
+file=open("data.txt",mode='r')
+file2=open("data3.txt",mode='w')
+f=file.read()
+file2.write(f)
+file.close()
