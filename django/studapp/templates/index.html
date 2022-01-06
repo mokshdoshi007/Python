@@ -1,0 +1,38 @@
+{% load static %}
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+Developer is {{name}}<br>
+<img src="{% static 'img/ilahi.jpg' %}" alt="Ilahi from YJHD" height="300",width="300"><br>
+Time is {{time}}<br>
+<form action="regcontroller" method=post>
+Name
+<input type="text" name="name">
+<br>
+Email
+<input type="text" name="email">
+<br>
+Password
+<input type="text" name="pass">
+<br>
+Gender
+<input type="radio" id="male" name="gender" value="male">Male
+<input type="radio" id="male" name="gender" value="male">Female
+<br>
+Contact
+<input type="number" name="contact">
+<br>
+City
+<input type="text" name="city">
+<br>
+State
+<input type="text" name="state">
+<br>
+<input type="submit" value="Register">
+</form>
+</body>
+</html>
